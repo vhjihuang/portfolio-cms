@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technical_notes",
+  "info": {
+    "singularName": "technical-note",
+    "pluralName": "technical-notes",
+    "displayName": "TechnicalNote"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "excerpt": {
+      "type": "text"
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "releaseDate": {
+      "type": "datetime"
+    },
+    "isPublic": {
+      "type": "boolean",
+      "default": false
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "tag"
+    }
+  }
+}
