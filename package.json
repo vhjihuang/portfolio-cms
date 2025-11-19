@@ -34,6 +34,9 @@
     "node": ">=20.0.0 <=24.x.x",
     "npm": ">=6.0.0"
   },
+  "overrides": {
+    "file-type": "16.5.4"
+  },
   "strapi": {
     "uuid": "f5cacabc-1084-450d-b3d3-99e79a6bb5ac",
     "installId": "f1d5d34e4ac273423666bebf024a9de1af4fa91f6a3c43fea85273b91939f8ba"
