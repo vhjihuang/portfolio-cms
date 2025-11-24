@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "features": {
+      "type": "json",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "duration": {
+      "type": "string",
+      "required": true
+    },
+    "iconName": {
+      "type": "string",
+      "default": "\"desktop\", \"mobile\", \"design\""
+    },
+    "colorFrom": {
+      "type": "string",
+      "default": "\"cyan-500\""
+    },
+    "colorTo": {
+      "type": "string",
+      "default": "\"blue-500\""
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}
